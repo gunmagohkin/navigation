@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Responsive Navbar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://your-username.github.io/your-repo/style.css"> <!-- Link to your online CSS -->
   <!-- Font Awesome Link for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
@@ -21,20 +21,91 @@
     </label>
 
     <!-- Site logo -->
-    <label class="logo">CodingNepal</label>
+    <label class="logo">Your Site Name</label>
 
     <!-- Navigation links -->
     <ul>
-      <li><a class="active" href="#">https://www.notion.so/gunmagohkinph/f3cbc61db5c645519f9d58dd733c5e24?v=b3bb0e75e61c4ba7afebe14b17f1867c&pvs=4</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Feedback</a></li>
+      <li><a class="active" href="https://gunmagohkinph.notion.site/f3cbc61db5c645519f9d58dd733c5e24?v=b3bb0e75e61c4ba7afebe14b17f1867c" target="_blank">Home</a></li>
+      <li><a href="https://gunmagohkinph.notion.site/Company-Profile-83d2b0d25166429d88813ad4eac1a95c" target="_blank">Company Profile</a></li>
+      <li><a href="https://gunmagohkinph.notion.site/Products-70e86601e562423889a6553c7575ecca" target="_blank">Products</a></li>
+      <li><a href="https://gunmagohkinph.notion.site/Processes-1ae83c95d2244d6ab8505c8a120a14e7" target="_blank">Processes</a></li>
     </ul>
   </nav>
 
-  <!-- Section for image -->
-  <section></section>
+  <!-- Section for content -->
+  <section>
+    <!-- Your content here -->
+  </section>
+
+  <style>
+    /* Basic CSS for the navbar */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav .logo {
+      float: left;
+      color: white;
+      font-size: 20px;
+      padding: 15px 20px;
+    }
+
+    nav ul {
+      float: right;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #575757;
+    }
+
+    .checkbtn {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        float: none;
+        display: none;
+        width: 100%;
+      }
+
+      nav ul li {
+        display: block;
+        width: 100%;
+      }
+
+      nav #check:checked ~ ul {
+        display: block;
+      }
+
+      .checkbtn {
+        display: block;
+        float: right;
+        cursor: pointer;
+        padding: 15px 20px;
+      }
+    }
+  </style>
 </body>
 
 </html>
